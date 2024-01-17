@@ -41,7 +41,7 @@ rl.question(
       console.log({ key, total: discountPrice + unitPrice });
       displayItems.push({ item: key, quantity: value, price: finalItemPrice });
     });
-
+    cli(displayItems);
     console.log(`Total price : $${totalPrice.toFixed(2)}`);
     console.log(
       `You saved $${(totNoDiscPrice - totalPrice).toFixed(2)} today.`
